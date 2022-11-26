@@ -11,5 +11,7 @@ namespace EduHomeFinalProject.DAL
         }
 
         public DbSet<SliderImage> SliderImages { get; set; }
+        public DbSet<Teacher> Teachers { get; set; }
+        public DbSet<Blog> Blogs { get; set; }
     }
 }

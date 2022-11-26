@@ -38,13 +38,13 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
             if (!model.Image.IsImage())
             {
-                ModelState.AddModelError("Image", "Sekil secilmelidir");
+                ModelState.AddModelError("Image", "Şəkil seçilməlidir..!");
                 return View(model);
             }
 
             if (!model.Image.IsAllowedSize(20))
             {
-                ModelState.AddModelError("Image", "Sekilin hecmi max 20mb ola biler");
+                ModelState.AddModelError("Image", "Şəklin ölçüsü maksimum 20mb ola bilər..!");
                 return View(model);
             }
 

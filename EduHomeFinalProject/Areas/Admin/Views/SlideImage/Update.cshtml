@@ -4,7 +4,7 @@
     <div class="col-md-12 grid-margin stretch-card">
         <div class="card">
             <div class="card-body">
-                <h4 class="card-title">Update Category</h4>
+                <h4 class="card-title">Update Slide</h4>
 
                 <form class="forms-sample" method="post" asp-action="update" enctype="multipart/form-data" en>
                     <div class="form-group">
@@ -19,7 +19,7 @@
                                 <tr>
 
                                     <th>Image</th>
-                                    <th>Action</th>
+                                    
 
                                 </tr>
                             </thead>
@@ -27,11 +27,9 @@
                                 <tr>
 
                                     <td>
-                                        <img class="productImage " src="~/assets/img/slider/@Model.ImageUrl" />
+                                        <img style="border-radius:0px; object-fit:contain; height:100px; width:100px;" class="productImage " src="~/assets/img/slider/@Model.ImageUrl" />
                                     </td>
-                                    <td>
-                                        <button type="button" class="btn btn-danger removeProductImage">Delete</button>
-                                    </td>
+                                   
 
                                 </tr>
 

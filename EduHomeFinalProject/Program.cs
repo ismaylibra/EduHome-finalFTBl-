@@ -24,6 +24,8 @@ namespace EduHomeFinalProject
             }
             Constants.RootPath = builder.Environment.WebRootPath;
             Constants.SliderPath = Path.Combine(Constants.RootPath, "assets", "img", "slider");
+            Constants.TeacherPath = Path.Combine(Constants.RootPath, "assets", "img", "teacher");
+            Constants.BlogPath = Path.Combine(Constants.RootPath, "assets", "img", "blog");
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

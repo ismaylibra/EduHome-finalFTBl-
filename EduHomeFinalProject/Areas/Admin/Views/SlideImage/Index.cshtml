@@ -31,9 +31,9 @@
                                     <td>@item.ButtonLink</td>
 
                                     <td>
-                                        <a class="btn btn-primary" asp-action="details" asp-route-id="@item.Id">Details</a>
-                                        <a class="btn btn-success" asp-action="update" asp-route-id="@item.Id">Update</a>
+                                     
                                         <form asp-action="delete" method="post" class="form-sample" asp-route-id="@item.Id">
+                                        <a class="btn btn-success" asp-action="update" asp-route-id="@item.Id">Update</a>
                                             <button type="submit" class="btn btn-danger">Delete</button>
                                         </form>
                                     </td>
