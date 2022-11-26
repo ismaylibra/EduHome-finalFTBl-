@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ScoWtn4i9PvHM6i5FqR2SnVmPIocoh/f9GCvjNaj3xo=",
+  "Hash": "/ZncaPPnxVQvqSxiHIGqtiXhXtxUCehtm9+uFw5vgZ4=",
   "Source": "EduHomeFinalProject",
   "BasePath": "_content/EduHomeFinalProject",
   "Mode": "Default",
@@ -2907,6 +2907,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\img\\banner\\banner.jpg"
     },
     {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\blog\\160ee174-358a-4e77-9fd6-374d0b28996e-blog-img.jpg",
+      "SourceId": "EduHomeFinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\",
+      "BasePath": "_content/EduHomeFinalProject",
+      "RelativePath": "assets/img/blog/160ee174-358a-4e77-9fd6-374d0b28996e-blog-img.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\160ee174-358a-4e77-9fd6-374d0b28996e-blog-img.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\blog\\30f56ccb-9d1a-4a9c-b99b-f6603125e44a-blog-img.jpg",
       "SourceId": "EduHomeFinalProject",
       "SourceType": "Discovered",
@@ -2939,6 +2956,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\5d0d12e8-f49c-4d02-8a8f-a66b04a6aa6c-blog1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\blog\\a2a48973-edae-4581-a285-cc248d07131b-blog3.jpg",
+      "SourceId": "EduHomeFinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\",
+      "BasePath": "_content/EduHomeFinalProject",
+      "RelativePath": "assets/img/blog/a2a48973-edae-4581-a285-cc248d07131b-blog3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\a2a48973-edae-4581-a285-cc248d07131b-blog3.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\blog\\blog1.jpg",
@@ -3126,6 +3160,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\blog-img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\blog\\deb9bdb0-e32d-4cd1-b09c-0daf4af3f082-blog8.jpg",
+      "SourceId": "EduHomeFinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\",
+      "BasePath": "_content/EduHomeFinalProject",
+      "RelativePath": "assets/img/blog/deb9bdb0-e32d-4cd1-b09c-0daf4af3f082-blog8.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\blog\\deb9bdb0-e32d-4cd1-b09c-0daf4af3f082-blog8.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\blog\\fc6edc7f-a211-4fb2-a3a5-c95efa57958e-blog4.jpg",
