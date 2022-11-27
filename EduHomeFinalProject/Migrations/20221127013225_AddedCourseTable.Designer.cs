@@ -4,6 +4,7 @@ using EduHomeFinalProject.DAL;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EduHomeFinalProject.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221127013225_AddedCourseTable")]
+    partial class AddedCourseTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -57,26 +59,6 @@ namespace EduHomeFinalProject.Migrations
                     b.ToTable("Blogs");
                 });
 
-            modelBuilder.Entity("EduHomeFinalProject.DAL.Entities.Category", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<bool>("IsDeleted")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Categories");
-                });
-
             modelBuilder.Entity("EduHomeFinalProject.DAL.Entities.Course", b =>
                 {
                     b.Property<int>("Id")
@@ -96,9 +78,6 @@ namespace EduHomeFinalProject.Migrations
                     b.Property<string>("Assesment")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("CategoryId")
-                        .HasColumnType("int");
 
                     b.Property<string>("CertificationContent")
                         .IsRequired()
@@ -142,8 +121,6 @@ namespace EduHomeFinalProject.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CategoryId");
 
                     b.ToTable("Courses");
                 });
@@ -258,22 +235,6 @@ namespace EduHomeFinalProject.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Teachers");
-                });
-
-            modelBuilder.Entity("EduHomeFinalProject.DAL.Entities.Course", b =>
-                {
-                    b.HasOne("EduHomeFinalProject.DAL.Entities.Category", "Category")
-                        .WithMany("Courses")
-                        .HasForeignKey("CategoryId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Category");
-                });
-
-            modelBuilder.Entity("EduHomeFinalProject.DAL.Entities.Category", b =>
-                {
-                    b.Navigation("Courses");
                 });
 #pragma warning restore 612, 618
         }
