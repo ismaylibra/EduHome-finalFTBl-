@@ -26,6 +26,11 @@ namespace EduHomeFinalProject
             Constants.SliderPath = Path.Combine(Constants.RootPath, "assets", "img", "slider");
             Constants.TeacherPath = Path.Combine(Constants.RootPath, "assets", "img", "teacher");
             Constants.BlogPath = Path.Combine(Constants.RootPath, "assets", "img", "blog");
+            Constants.CoursePath = Path.Combine(Constants.RootPath, "assets", "img", "course");
+            Constants.AboutPath = Path.Combine(Constants.RootPath, "assets", "img", "about");
+            Constants.SpeakerPath = Path.Combine(Constants.RootPath, "assets", "img", "speaker");
+            Constants.EventPath = Path.Combine(Constants.RootPath, "assets", "img", "event");
+
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

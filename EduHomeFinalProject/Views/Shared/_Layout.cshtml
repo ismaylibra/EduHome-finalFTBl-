@@ -34,7 +34,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-3 col-xs-6">
                         <div class="logo">
-                            <a href="index.html"><img src="~/assets/img/logo/logo.png" alt="eduhome" /></a>
+                            <a asp-controller="home" asp-action="index"><img src="~/assets/img/logo/logo.png" alt="eduhome" /></a>
                         </div>
                     </div>
                     <div class="col-md-9 col-sm-9 col-xs-12">
@@ -53,7 +53,7 @@
                                                 <li><a href="index-5.html">Home Five</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="about.html">About</a></li>
+                                        <li><a asp-controller="aboutPage" asp-action="index">About</a></li>
                                         <li>
                                             <a href="course.html">courses</a>
                                             <ul>
@@ -135,22 +135,7 @@
         <div class="main-footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="single-widget pr-60">
-                            <div class="footer-logo pb-25">
-                                <a href="index.html"><img src="img/logo/footer-logo.png" alt="eduhome"></a>
-                            </div>
-                            <p>I must explain to you how all this mistaken idea of denoung pleure and praising pain was born and give you a coete account of the system. </p>
-                            <div class="footer-social">
-                                <ul>
-                                    <li><a href="#"><i class="zmdi zmdi-facebook"></i></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                    <li><a href="#"><i class="zmdi zmdi-twitter"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    @await Component.InvokeAsync("FooterLogoAndSocialMedia")
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="single-widget">
                             <h3>information</h3>
@@ -190,7 +175,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <p>Copyright © <a href="#" target="_blank">HasTech</a> 2017. All Right Reserved By Hastech.</p>
+                        <p>Copyright © <a href="https://www.instagram.com/ismayil.ibrakhimli" target="_blank">Ismayil Ibra</a> 2022. All Right Reserved By Ismayil Ibra.</p>
                     </div>
                 </div>
             </div>

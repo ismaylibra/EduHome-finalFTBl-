@@ -15,5 +15,10 @@ namespace EduHomeFinalProject.DAL
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Course> Courses { get; set; }
+        public DbSet<AboutPage> AboutPages { get; set; }
+        public DbSet<FooterLogoAndSocialMedia> FooterLogoAndSocialMedias { get; set; }
+        public DbSet<Speaker> Speakers { get; set; }
+        public DbSet<Event> Events { get; set; }
+        public DbSet<EventSpeaker> EventSpeakers { get; set; }
     }
 }

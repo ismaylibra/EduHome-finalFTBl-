@@ -158,7 +158,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 }
 
 
-                var path = Path.Combine(Constants.TeacherPath, "img", "teacher", teacher.ImageUrl);
+                var path = Path.Combine(Constants.RootPath, "img", "teacher", teacher.ImageUrl);
 
                 if (System.IO.File.Exists(path))
                     System.IO.File.Delete(path);
@@ -202,7 +202,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
             if (teacher.Id != id) return BadRequest();
 
-            var path = Path.Combine(Constants.TeacherPath, "img", "teacher", teacher.ImageUrl);
+            var path = Path.Combine(Constants.RootPath, "img", "teacher", teacher.ImageUrl);
 
             if (System.IO.File.Exists(path))
                 System.IO.File.Delete(path);

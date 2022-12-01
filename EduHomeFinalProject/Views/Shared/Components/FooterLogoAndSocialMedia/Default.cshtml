@@ -1,0 +1,18 @@
+﻿@model FooterLogoAndSocialMedia
+
+<div class="col-md-4 col-sm-6 col-xs-12">
+    <div class="single-widget pr-60">
+        <div class="footer-logo pb-25">
+            <a asp-controller="home" asp-action="index"><img src="~/assets/img/logo/@Model.ImageUrl" alt="eduhome"></a>
+        </div>
+        <p>@Model.Content </p>
+        <div class="footer-social">
+            <ul>
+                <li><a target="_blank" href="@Model.FacebookLink"><i class="zmdi zmdi-facebook"></i></a></li>
+                <li><a target="_blank" href="@Model.PinterestLink"><i class="zmdi zmdi-pinterest"></i></a></li>
+                <li><a target="_blank" href="@Model.VimeoLink"><i class="zmdi zmdi-vimeo"></i></a></li>
+                <li><a target="_blank" href="@Model.Twitterlink"><i class="zmdi zmdi-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>

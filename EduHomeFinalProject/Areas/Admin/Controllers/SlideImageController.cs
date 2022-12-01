@@ -133,7 +133,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 }
 
 
-                var path = Path.Combine(Constants.SliderPath, "img", "slider", slideImage.ImageUrl);
+                var path = Path.Combine(Constants.RootPath, "img", "slider", slideImage.ImageUrl);
 
                 if (System.IO.File.Exists(path))
                     System.IO.File.Delete(path);
@@ -165,7 +165,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
             if (slideImage.Id != id) return BadRequest();
 
-            var path = Path.Combine(Constants.SliderPath, "img", "slider", slideImage.ImageUrl);
+            var path = Path.Combine(Constants.RootPath, "img", "slider", slideImage.ImageUrl);
 
             if (System.IO.File.Exists(path))
                 System.IO.File.Delete(path);
