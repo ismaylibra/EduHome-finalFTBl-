@@ -78,7 +78,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 return View(model);
             }
 
-            var unicalFileName = await model.Image.GenerateFile(Constants.CoursePath);
+            var unicalFileName = await model.Image.GenerateFile(Constants.EventPath);
 
             var createdEvent = new Event
             {
@@ -108,6 +108,13 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
             var speakersSelectListItem = new List<SelectListItem>();
 
             speakers.ForEach(s => speakersSelectListItem.Add(new SelectListItem(s.FullName, s.Id.ToString())));
+
+            createdEvent.EventSpeakers = eventSpeakers;
+            model.Speakers = speakersSelectListItem;
+            await _dbContext.Events.AddAsync(createdEvent);
+            await _dbContext.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
 
 
     } }

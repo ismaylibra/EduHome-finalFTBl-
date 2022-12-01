@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hM9sts6LPFTIisO/w8g00rNQLYgQ+83NUcaZsJ7A0XU=",
+  "Hash": "Y7h7gAB/2lBrpA1bMWkgyDw5cHXpj6EwV/pOHLmaomU=",
   "Source": "EduHomeFinalProject",
   "BasePath": "_content/EduHomeFinalProject",
   "Mode": "Default",
@@ -3279,6 +3279,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\contact\\contact3.png"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\course\\4ee66569-3284-4479-8fff-69967840d4d7-event2.jpg",
+      "SourceId": "EduHomeFinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\",
+      "BasePath": "_content/EduHomeFinalProject",
+      "RelativePath": "assets/img/course/4ee66569-3284-4479-8fff-69967840d4d7-event2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\course\\4ee66569-3284-4479-8fff-69967840d4d7-event2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\course\\5f41b6b8-cb92-44b2-8474-f9629fa20c77-event1.jpg",
+      "SourceId": "EduHomeFinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\",
+      "BasePath": "_content/EduHomeFinalProject",
+      "RelativePath": "assets/img/course/5f41b6b8-cb92-44b2-8474-f9629fa20c77-event1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\course\\5f41b6b8-cb92-44b2-8474-f9629fa20c77-event1.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\course\\c4480780-1181-4712-b124-bd2c6200fd43-course1.jpg",

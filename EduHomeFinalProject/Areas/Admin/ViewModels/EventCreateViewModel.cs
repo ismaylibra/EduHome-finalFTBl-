@@ -13,7 +13,7 @@ namespace EduHomeFinalProject.Areas.Admin.ViewModels
         public DateTime EndTime { get; set; }
         public string Adress { get; set; }
         public string Content { get; set; }
-        public List<SelectListItem> Speakers { get; set; }
+        public List<SelectListItem>? Speakers { get; set; }
         public List<int> SpeakerIds { get; set; }
     }
 }
