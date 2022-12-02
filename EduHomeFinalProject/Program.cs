@@ -30,6 +30,8 @@ namespace EduHomeFinalProject
             Constants.AboutPath = Path.Combine(Constants.RootPath, "assets", "img", "about");
             Constants.SpeakerPath = Path.Combine(Constants.RootPath, "assets", "img", "speaker");
             Constants.EventPath = Path.Combine(Constants.RootPath, "assets", "img", "event");
+            Constants.FooterPath = Path.Combine(Constants.RootPath, "assets", "img", "logo");
+
 
 
             app.UseHttpsRedirection();

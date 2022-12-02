@@ -75,8 +75,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXZlbnRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ASUS/Desktop/ASP.NET/EduHomeFinalProject/EduHomeFinalProject/Areas/Admin/Views/Event/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRXZlbnRcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/ASP.NET/EduHomeFinalProject/EduHomeFinalProject/Areas/Admin/Views/FooterInformation/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRm9vdGVySW5mb3JtYXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/ASP.NET/EduHomeFinalProject/EduHomeFinalProject/Areas/Admin/Views/FooterInformation/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRm9vdGVySW5mb3JtYXRpb25cVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ASUS/Desktop/ASP.NET/EduHomeFinalProject/EduHomeFinalProject/Areas/Admin/Views/FooterLogoAndSocialMedia/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRm9vdGVyTG9nb0FuZFNvY2lhbE1lZGlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ASUS/Desktop/ASP.NET/EduHomeFinalProject/EduHomeFinalProject/Areas/Admin/Views/FooterLogoAndSocialMedia/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcRm9vdGVyTG9nb0FuZFNvY2lhbE1lZGlhXFVwZGF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ASUS/Desktop/ASP.NET/EduHomeFinalProject/EduHomeFinalProject/Areas/Admin/Views/Shared/_AdminLayout.cshtml]

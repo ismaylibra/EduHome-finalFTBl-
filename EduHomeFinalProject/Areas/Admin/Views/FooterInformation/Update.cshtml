@@ -1,0 +1,53 @@
+﻿@model FooterInformationUpdateViewModel
+
+
+<div class="row col-lg-12">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Footer Information</h4>
+
+                <form class="forms-sample" method="post" asp-action="update">
+                    <div class="form-group">
+                        <label asp-for="Title">Title</label>
+                        <input asp-for="Title" class="form-control" placeholder="Title">
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                      <div class="form-group">
+                        <label asp-for="Admission">Admission</label>
+                        <input asp-for="Admission" class="form-control" placeholder="Admission">
+                        <span asp-validation-for="Admission" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AcademicCalendar">Academic Calendar</label>
+                        <input asp-for="AcademicCalendar" class="form-control" placeholder="Academic Calendar">
+                        <span asp-validation-for="AcademicCalendar" class="text-danger"></span>
+                    </div>
+                      <div class="form-group">
+                        <label asp-for="Title">Title</label>
+                        <input asp-for="Title" class="form-control" placeholder="Title">
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                      <div class="form-group">
+                        <label asp-for="EventList">Event List</label>
+                        <input asp-for="EventList" class="form-control" placeholder="Event List">
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                      <div class="form-group">
+                        <label asp-for="HostelAndDinning">Hostel And Dinning</label>
+                        <input asp-for="HostelAndDinning" class="form-control" placeholder="HostelAndDinning">
+                        <span asp-validation-for="HostelAndDinning" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TimeTable">TimeTable</label>
+                        <input asp-for="TimeTable" class="form-control" placeholder="TimeTable">
+                        <span asp-validation-for="TimeTable" class="text-danger"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light" asp-action="index">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

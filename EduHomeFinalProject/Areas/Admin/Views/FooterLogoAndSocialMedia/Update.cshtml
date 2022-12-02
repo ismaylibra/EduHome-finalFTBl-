@@ -1,0 +1,77 @@
+﻿@model FooterLogoAndSocialMediaUpdateViewModel
+
+<div class="row col-lg-12">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Footer</h4>
+
+                <form class="forms-sample" method="post" asp-action="update" enctype="multipart/form-data" en>
+                    <div class="form-group">
+                        <label asp-for="Image">Image</label>
+                        <input asp-for="Image" class="form-control" placeholder="Image">
+                        <span asp-validation-for="Image" class="text-danger"></span>
+
+                    </div>
+                    <div class="imagesTable">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+
+                                    <th>Image</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>
+                                        <img style="border-radius:0px; object-fit:contain; height:100px; width:100px;" class="productImage " src="~/assets/img/logo/@Model.ImageUrl" />
+                                    </td>
+
+
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Content">Content</label>
+                        <input asp-for="Content" class="form-control" placeholder="Content">
+                        <span asp-validation-for="Content" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FacebookLink">Facebook Link</label>
+                        <input asp-for="FacebookLink" class="form-control" placeholder="Facebook Link">
+                        <span asp-validation-for="FacebookLink" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Twitterlink">Twitter link</label>
+                        <input asp-for="Twitterlink" class="form-control" placeholder="Twitter link">
+                        <span asp-validation-for="Twitterlink" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="PinterestLink">Pinterest Link</label>
+                        <input asp-for="PinterestLink" class="form-control" placeholder="Pinterest Link">
+                        <span asp-validation-for="PinterestLink" class="text-danger"></span>
+
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="VimeoLink">Vimeo Link</label>
+                        <input asp-for="VimeoLink" class="form-control" placeholder="Vimeo Link">
+                        <span asp-validation-for="VimeoLink" class="text-danger"></span>
+
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light" asp-action="index">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

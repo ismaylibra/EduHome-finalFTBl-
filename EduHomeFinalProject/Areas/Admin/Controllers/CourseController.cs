@@ -60,7 +60,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
             var viewModel = new CourseCreateViewModel
             {
-                Categories= categoryListItem,
+                Categories= categoryListItem
                  
                 
             };
@@ -191,7 +191,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
 
 
-                var path = Path.Combine(Constants.CoursePath, "img", "course", course.ImageUrl);
+                var path = Path.Combine(Constants.RootPath, "img", "course", course.ImageUrl);
 
                 if (System.IO.File.Exists(path))
                     System.IO.File.Delete(path);

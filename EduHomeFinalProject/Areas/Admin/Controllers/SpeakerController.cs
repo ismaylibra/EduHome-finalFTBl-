@@ -162,7 +162,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
             if (speaker.Id != id) return BadRequest();
 
-            var path = Path.Combine(Constants.RootPath, "img", "teacher", speaker.ImageUrl);
+            var path = Path.Combine(Constants.RootPath, "img", "speaker", speaker.ImageUrl);
 
             if (System.IO.File.Exists(path))
                 System.IO.File.Delete(path);

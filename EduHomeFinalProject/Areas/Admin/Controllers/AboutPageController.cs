@@ -135,7 +135,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 }
 
 
-                var path = Path.Combine(Constants.AboutPath, "img", "about", about.ImageUrl);
+                var path = Path.Combine(Constants.RootPath, "img", "about", about.ImageUrl);
 
                 if (System.IO.File.Exists(path))
                     System.IO.File.Delete(path);
