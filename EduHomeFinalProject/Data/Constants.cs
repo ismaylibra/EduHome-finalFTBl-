@@ -11,5 +11,7 @@
         public static string FooterPath;
         public static string SpeakerPath;
         public static string EventPath;
+
+        public const string AdminRole = "Admin";
     }
 }

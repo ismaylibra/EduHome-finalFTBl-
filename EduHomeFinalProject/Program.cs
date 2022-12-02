@@ -1,18 +1,40 @@
 using EduHomeFinalProject.DAL;
+using EduHomeFinalProject.DAL.Entities;
 using EduHomeFinalProject.Data;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.EntityFrameworkCore;
 
 namespace EduHomeFinalProject
 {
     public class Program
     {
-        public static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
+                    builder =>
+                    {
+                        builder.MigrationsAssembly(nameof(EduHomeFinalProject));
+                    });
+            });
+            builder.Services.AddIdentity<User, IdentityRole>(options =>
+            {
+                options.Lockout.MaxFailedAccessAttempts = 2;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
+
+                options.User.RequireUniqueEmail = true;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+            builder.Services.Configure<AdminUser>(builder.Configuration.GetSection("AdminUser"));
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -22,6 +44,7 @@ namespace EduHomeFinalProject
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
             Constants.RootPath = builder.Environment.WebRootPath;
             Constants.SliderPath = Path.Combine(Constants.RootPath, "assets", "img", "slider");
             Constants.TeacherPath = Path.Combine(Constants.RootPath, "assets", "img", "teacher");
@@ -37,6 +60,13 @@ namespace EduHomeFinalProject
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            using (var scope = app.Services.CreateScope())
+            {
+                var serviceProvider = scope.ServiceProvider;
+                var dataInitializer = new DataInitializer(serviceProvider);
+
+                await dataInitializer.SeedData();
+            }
             app.UseRouting();
 
             app.UseAuthorization();
@@ -52,10 +82,10 @@ namespace EduHomeFinalProject
                 );
             });
 
-            
-               
 
-            app.Run();
+
+
+            await app.RunAsync();
         }
     }
 }

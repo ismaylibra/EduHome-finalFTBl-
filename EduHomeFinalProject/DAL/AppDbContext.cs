@@ -1,10 +1,11 @@
 ﻿using EduHomeFinalProject.DAL.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Cryptography;
 
 namespace EduHomeFinalProject.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<User>
     {
         public AppDbContext(DbContextOptions options) : base(options)
         {

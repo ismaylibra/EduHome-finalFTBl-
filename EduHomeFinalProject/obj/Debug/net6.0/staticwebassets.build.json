@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "HkyiNYuX7mhABZ1VdXeSIFTlEcjbLAg/5Wq7JCn43i4=",
+  "Hash": "5tRvYz5S+/3MI0TyDhwqnYL41yKBNk58Kzv0k5pha/k=",
   "Source": "EduHomeFinalProject",
   "BasePath": "_content/EduHomeFinalProject",
   "Mode": "Default",
@@ -3262,6 +3262,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\course\\5f41b6b8-cb92-44b2-8474-f9629fa20c77-event1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\course\\73606e0a-ae7e-4e7e-9b88-fb3412bd4af1-course1.jpg",
+      "SourceId": "EduHomeFinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\",
+      "BasePath": "_content/EduHomeFinalProject",
+      "RelativePath": "assets/img/course/73606e0a-ae7e-4e7e-9b88-fb3412bd4af1-course1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\course\\73606e0a-ae7e-4e7e-9b88-fb3412bd4af1-course1.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\course\\c4480780-1181-4712-b124-bd2c6200fd43-course1.jpg",

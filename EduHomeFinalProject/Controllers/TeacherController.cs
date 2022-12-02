@@ -20,7 +20,7 @@ namespace EduHomeFinalProject.Controllers
         }
         public async Task<IActionResult> Details(int? id)
         {   if (id is null) return NotFound();
-            var teacher = await _dbContext.Teachers.SingleOrDefaultAsync(x=> x.Id == id);
+            var teacher = await _dbContext.Teachers.FirstOrDefaultAsync(x=> x.Id == id);
             if (teacher.Id != id) return NotFound();
             return View(teacher);
         }

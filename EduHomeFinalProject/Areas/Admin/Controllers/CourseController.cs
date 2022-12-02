@@ -21,9 +21,9 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var categories = await _dbContext.Courses.Where(c => !c.IsDeleted).Include(c => c.Category).ToListAsync();
+            var courses = await _dbContext.Courses.Where(c => !c.IsDeleted).Include(c => c.Category).ToListAsync();
 
-            return View(categories);
+            return View(courses);
         }
 
         public async Task<IActionResult> Create()

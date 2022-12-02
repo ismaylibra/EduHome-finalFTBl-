@@ -175,7 +175,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 .FirstOrDefaultAsync();
 
             if (eventt is null) return NotFound();
-            if (!ModelState.IsValid) return View(model);
+
 
             if (DateTime.Compare(DateTime.UtcNow.AddHours(4), model.StartTime) >= 0)
             {
@@ -195,6 +195,8 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
             }
             var speakers = await _dbContext.Speakers.Where(s => !s.IsDeleted).ToListAsync();
             var speakerList = new List<SelectListItem>();
+            speakers.ForEach(s => speakerList.Add(new SelectListItem(s.FullName, s.Id.ToString())));
+            List<EventSpeaker> eventSpeakers = new List<EventSpeaker>();
             if (model.SpeakerIds.Count > 0)
             {
                 foreach (int speakerId in model.SpeakerIds)
@@ -204,30 +206,21 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                         ModelState.AddModelError("", "Yanlış spiker seçdiniz..!");
                         return View(model);
                     }
-                }
-                List<EventSpeaker> eventSpeakers = new List<EventSpeaker>();
-
-                foreach (var item in model.SpeakerIds)
-                {
-                    EventSpeaker eventSpeaker = new EventSpeaker
+                    eventSpeakers.Add(new EventSpeaker
                     {
-                        SpeakerId = item
-                    };
-                    eventSpeakers.Add(eventSpeaker);
-                }
+                        SpeakerId=speakerId
+                    });
+                }              
                 eventt.EventSpeakers = eventSpeakers;
 
-
-
-
-             }
+            }
             else
             {
                 ModelState.AddModelError("", "Ən azı 1 spiker seçilməlidir..!");
                 return View(model);
             }
 
-            if(model.ImageUrl is not null)
+            if (model.ImageUrl is not null)
             {
 
 
@@ -246,9 +239,14 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 var unicalFileName = await model.Image.GenerateFile(Constants.EventPath);
                 eventt.ImageUrl = unicalFileName;
             }
+            var viewModel = new EventUpdateViewModel
+            {
+                Speakers=speakerList
+            };
+            if (!ModelState.IsValid) return View(viewModel);
             eventt.Title = model.Title;
             eventt.Content = model.Content;
-            eventt.Adress = model.Adress;  
+            eventt.Adress = model.Adress;
             eventt.StartTime = model.StartTime;
             eventt.EndTime = model.EndTime;
             await _dbContext.SaveChangesAsync();
