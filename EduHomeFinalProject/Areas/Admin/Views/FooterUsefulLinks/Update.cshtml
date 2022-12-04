@@ -1,0 +1,49 @@
+﻿@model FooterUsefulLinksUpdateViewModel
+
+
+<div class="row col-lg-12">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Footer Information</h4>
+
+                <form class="forms-sample" method="post" asp-action="update">
+                    <div class="form-group">
+                        <label asp-for="Title">Title</label>
+                        <input asp-for="Title" class="form-control" placeholder="Title">
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="OurCourses">Our Courses</label>
+                        <input asp-for="OurCourses" class="form-control" placeholder="Our Courses">
+                        <span asp-validation-for="OurCourses" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="AboutUs">About Us</label>
+                        <input asp-for="AboutUs" class="form-control" placeholder="About Us">
+                        <span asp-validation-for="AboutUs" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeachersAndFaculty">Teachers & Faculty</label>
+                        <input asp-for="TeachersAndFaculty" class="form-control" placeholder="Teachers & Faculty">
+                        <span asp-validation-for="TeachersAndFaculty" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="TeamsAndConditions">Teams & Conditions</label>
+                        <input asp-for="TeamsAndConditions" class="form-control" placeholder="Teams & Conditions">
+                        <span asp-validation-for="TeamsAndConditions" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="OurEvents">Our Events</label>
+                        <input asp-for="OurEvents" class="form-control" placeholder="Our Events">
+                        <span asp-validation-for="OurEvents" class="text-danger"></span>
+                    </div>
+                    
+
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light" asp-action="index">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

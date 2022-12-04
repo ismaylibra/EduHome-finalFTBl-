@@ -149,7 +149,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public async  Task<IActionResult> Update(int? id, CourseUpdateViewModel model)
         {
-            if (!ModelState.IsValid) return View();
+            if (!ModelState.IsValid) return View(model);
             if (id is null) return NotFound();
             var categories = await _dbContext.Categories.Where(c => !c.IsDeleted).ToListAsync();
             if (categories is null) return NotFound();
@@ -206,6 +206,8 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
 
 
             };
+           
+
 
 
 

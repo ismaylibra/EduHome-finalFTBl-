@@ -22,5 +22,7 @@ namespace EduHomeFinalProject.DAL
         public DbSet<Event> Events { get; set; }
         public DbSet<EventSpeaker> EventSpeakers { get; set; }
         public DbSet<FooterInformation> FooterInformations { get; set; }
+        public DbSet<FooterUsefulLinks> FooterUsefulLinks { get; set; }
+        public DbSet<GetInTouch> GetInTouches { get; set; }
     }
 }

@@ -1,0 +1,49 @@
+﻿@model GetInTouchUpdateViewModel
+
+
+<div class="row col-lg-12">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Update Footer Information</h4>
+
+                <form class="forms-sample" method="post" asp-action="update">
+                    <div class="form-group">
+                        <label asp-for="Title">Title</label>
+                        <input asp-for="Title" class="form-control" placeholder="Title">
+                        <span asp-validation-for="Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Adress">Adress</label>
+                        <input asp-for="Adress" class="form-control" placeholder="Adress">
+                        <span asp-validation-for="Adress" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="FirstPhoneNumber">First Phone Number</label>
+                        <input asp-for="FirstPhoneNumber" class="form-control" placeholder="First Phone Number">
+                        <span asp-validation-for="FirstPhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="SecondPhoneNumber">Second Phone Number</label>
+                        <input asp-for="SecondPhoneNumber" class="form-control" placeholder="Second Phone Number">
+                        <span asp-validation-for="SecondPhoneNumber" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email">Email</label>
+                        <input asp-for="Email" class="form-control" placeholder="Email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Website">Website URL</label>
+                        <input asp-for="Website" class="form-control" placeholder="Website URL">
+                        <span asp-validation-for="Website" class="text-danger"></span>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light" asp-action="index">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

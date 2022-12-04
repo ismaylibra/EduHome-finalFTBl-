@@ -1,4 +1,5 @@
 ﻿using EduHomeFinalProject.DAL;
+using EduHomeFinalProject.DAL.Entities;
 using EduHomeFinalProject.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -30,5 +31,27 @@ namespace EduHomeFinalProject.Controllers
             
             return View(course);
         }
+
+        public async Task<IActionResult> Search(string searchText)
+        {
+            if (string.IsNullOrEmpty(searchText))
+                return NoContent();
+
+            var courses = await _dbContext.Courses
+                .Where(course => !course.IsDeleted && course.Title.ToLower().Contains(searchText.ToLower()))
+                .ToListAsync();
+
+            var model = new List<Course>();
+
+            courses.ForEach(course => model.Add(new Course
+            {
+                Id = course.Id,
+                Title = course.Title,
+                ImageUrl = course.ImageUrl,
+            }));
+
+            return PartialView("_CourseSearchPartial", courses);
+        }
     }
 }
+    

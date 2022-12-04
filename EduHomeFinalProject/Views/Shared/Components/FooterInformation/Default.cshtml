@@ -1,0 +1,13 @@
+﻿@model FooterInformation
+<div class="col-md-3 col-sm-6 col-xs-12">
+    <div class="single-widget">
+        <h3>@Model.Title</h3>
+        <ul>
+            <li><a href="#">@Model.Admission</a></li>
+            <li><a href="#">@Model.AcademicCalendar</a></li>
+            <li><a asp-controller="event" asp-action="index">@Model.EventList</a></li>
+            <li><a href="#">@Model.HostelAndDinning</a></li>
+            <li><a href="#">@Model.TimeTable</a></li>
+        </ul>
+    </div>
+</div>

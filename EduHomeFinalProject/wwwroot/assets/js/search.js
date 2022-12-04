@@ -3,13 +3,13 @@ if (searchInput) {
     searchInput.addEventListener("keyup", function () {
 
         let text = this.value
-        let productList = document.querySelector("#product-list")
+        let courseList = document.querySelector("#course-list")
 
-        fetch('Courses/Search?searchText=' + text)
+        fetch('Course/Search?searchText=' + text)
             .then((response) => response.text())
             .then((data) => {
                 console.log(data)
-                productList.innerHTML = data
+                courseList.innerHTML = data
             });
 
     });

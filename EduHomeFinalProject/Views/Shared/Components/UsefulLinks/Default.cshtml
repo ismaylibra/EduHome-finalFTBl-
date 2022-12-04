@@ -1,0 +1,13 @@
+﻿@model FooterUsefulLinks
+<div class="col-md-2 col-sm-6 col-xs-12">
+    <div class="single-widget">
+        <h3>@Model.Title</h3>
+        <ul>
+            <li><a asp-controller="course" asp-action="index">@Model.OurCourses</a></li>
+            <li><a asp-controller="aboutPage" asp-action="index">@Model.AboutUs</a></li>
+            <li><a asp-controller="teacher" asp-action="index">@Model.TeachersAndFaculty</a></li>
+            <li><a href="#">@Model.TeamsAndConditions</a></li>
+            <li><a asp-controller="event" asp-action="index">@Model.OurEvents</a></li>
+        </ul>
+    </div>
+</div>

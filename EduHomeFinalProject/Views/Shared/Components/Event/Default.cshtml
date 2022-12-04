@@ -9,12 +9,12 @@
     <div class="single-event mb-60">
         <div class="event-img">
                 <a  asp-controller="event" asp-action="details" asp-route-id="@eventt.Id">
-                <img src="~/assets/img/event/@eventt.ImageUrl" alt="event">
+                <img src="~/assets/img/event/@eventt.ImageUrl" style="width370px;height:250px;" alt="event">
                 <div class="course-hover">
                     <i class="fa fa-link"></i>
                 </div>
             </a>
-            <div class="event-date">
+            <div class="event-date" >
                     <h3>@eventt.StartTime.ToString("MMM dd")</h3>
             </div>
         </div>
