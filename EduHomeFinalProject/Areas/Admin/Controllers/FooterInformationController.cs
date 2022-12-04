@@ -1,5 +1,7 @@
-﻿using EduHomeFinalProject.Areas.Admin.ViewModels;
+﻿using EduHomeFinalProject.Areas.Admin.Data;
+using EduHomeFinalProject.Areas.Admin.ViewModels;
 using EduHomeFinalProject.DAL;
+using EduHomeFinalProject.DAL.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,6 +21,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
             var information = _dbContext.FooterInformations.Where(i=>!i.IsDeleted).FirstOrDefault();
             return View(information);
         }
+
 
         public async Task<IActionResult> Update(int? id)
         {
@@ -78,5 +81,8 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
             await _dbContext.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
+       
     }
 }

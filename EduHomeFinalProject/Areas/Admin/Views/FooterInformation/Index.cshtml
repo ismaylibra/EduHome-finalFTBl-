@@ -5,33 +5,42 @@
         <div class="card">
             <div class="card-body">
                 <h4 class="card-title">Footer Information</h4>
+                @if(Model is null)
+                {
+                    <a asp-action="create" class="btn btn-primary">Add</a>
+                }else
+                {
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+
+                                    <th>Title</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>@Model.Title</td>
+
+
+                                    <td>
+
+
+                                         <a class="btn btn-success" asp-action="update" asp-route-id="@Model.Id">Update</a>
+                                    </td>
+
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                }
                 
-                <div class="table-responsive">
-                    <table class="table">
-                        <thead>
-                            <tr>
-
-                                <th>Title</th>
-                                <th>Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-
-                                <td>@Model.Title</td>
-                               
-
-                                <td>
-
-                                    <a class="btn btn-success" asp-action="update" asp-route-id="@Model.Id">Update</a>
-                                </td>
-
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
+                
+              
             </div>
         </div>
     </div>

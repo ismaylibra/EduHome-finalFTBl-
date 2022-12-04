@@ -100,6 +100,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
             createdCourse.Language = model.Language;
             createdCourse.ClassDuration = model.ClassDuration;
             createdCourse.Assesment = model.Assesment;
+            createdCourse.CourseFee = model.CourseFee;
 
             await _dbContext.Courses.AddAsync(createdCourse);
             await _dbContext.SaveChangesAsync();
@@ -137,6 +138,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 ClassDuration = course.ClassDuration,
                 CategoryId = course.CategoryId,
                 Assesment = course.Assesment,
+                CourseFee = course.CourseFee,
                 Categories = selectedCategories
 
             };
@@ -219,6 +221,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
             course.Duration = model.Duration;
             course.SkillLevel = model.SkillLevel;
             course.Language = model.Language;
+            course.CourseFee = model.CourseFee;
             course.StudentCount = model.StudentCount;
             course.ApplyContent = model.ApplyContent;
             course.CertificationContent = model.CertificationContent;

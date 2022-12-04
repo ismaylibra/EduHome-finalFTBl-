@@ -24,5 +24,7 @@ namespace EduHomeFinalProject.DAL
         public DbSet<FooterInformation> FooterInformations { get; set; }
         public DbSet<FooterUsefulLinks> FooterUsefulLinks { get; set; }
         public DbSet<GetInTouch> GetInTouches { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
+        public DbSet<ContactMessage> ContactMessages { get; set; }
     }
 }

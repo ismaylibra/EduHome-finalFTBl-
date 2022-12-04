@@ -93,7 +93,7 @@
                                                 <li><a href="blog-right-side-bar.html">blog righ sidebar</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a asp-controller="contact" asp-action="index">Contact</a></li>
                                         @if(User.Identity.IsAuthenticated)
                                         {
                                             <li><a asp-controller="account" asp-action="logout"><i class="fa-solid fa-right-from-bracket" style="margin-right:12px;"></i> @User.Identity.Name</a></li>
