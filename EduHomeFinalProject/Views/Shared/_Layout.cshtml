@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="~/assets/css/reset.css">
     <link rel="stylesheet" href="~/assets/css/ionicons.min.css">
     <link rel="stylesheet" href="~/assets/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="~/assets/css/style.css">
     <link rel="stylesheet" href="~/assets/css/responsive.css">
     <script src="~/assets/js/vendor/modernizr-2.8.3.min.js"></script>
@@ -43,6 +44,14 @@
                             <div class="main-menu one text-right">
                                 <nav>
                                     <ul>
+                                        @if(User.IsInRole("Admin"))
+                                        {
+                                            <li>
+                                               <a asp-controller="admin" style="font-weight:bolder;" >
+                                                    <i class="fa-solid fa-screwdriver-wrench" ></i> Admin Panel
+                                               </a>
+                                                </li>
+                                        }
                                         <li>
                                             <a href="index.html">Home</a>
                                             <ul>
@@ -55,16 +64,16 @@
                                         </li>
                                         <li><a asp-controller="aboutPage" asp-action="index">About</a></li>
                                         <li>
-                                            <a href="course.html">courses</a>
+                                            <a asp-controller="course" asp-action="index" >courses</a>
                                             <ul>
-                                                <li><a href="course.html">courses</a></li>
-                                                <li><a href="course-details.html">courses details</a></li>
+                                                <li><a asp-controller="course" asp-action="index">courses</a></li>
+                                               
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="event.html">event</a>
+                                            <a asp-controller="event" asp-action="index">event</a>
                                             <ul>
-                                                <li><a href="event.html">event</a></li>
+                                                <li><a asp-controller="event" asp-action="index"></a></li>
                                                 <li><a href="event-left-side-bar.html">event left sidebar</a></li>
                                                 <li><a href="event-right-side-bar.html">event right sidebar</a></li>
                                                 <li><a href="event-details.html">event details</a></li>
@@ -85,7 +94,15 @@
                                             </ul>
                                         </li>
                                         <li><a href="contact.html">Contact</a></li>
-                                        <li><a href="#">Buy Now</a>
+                                        @if(User.Identity.IsAuthenticated)
+                                        {
+                                            <li><a asp-controller="account" asp-action="logout"><i class="fa-solid fa-right-from-bracket" style="margin-right:12px;"></i> @User.Identity.Name</a></li>
+                                        }
+                                        else
+                                        {
+                                            <li><a asp-controller="account" asp-action="login"><i class="fa-solid fa-user-tie" style="margin-right:12px;"></i> Sign In</a></li>
+                                        }
+                                       
                                     </ul>
                                 </nav>
                             </div>
@@ -191,6 +208,7 @@
     <script src="~/assets/js/owl.carousel.min.js"></script>
     <script src="~/assets/js/jquery.mb.YTPlayer.js"></script>
     <script src="~/assets/js/jquery.nicescroll.min.js"></script>
+    <script src="~/assets/js/search.js"></script>
     <script src="~/assets/js/plugins.js"></script>
     <script src="~/assets/js/main.js"></script>
 </body>
