@@ -36,7 +36,7 @@ namespace EduHomeFinalProject.Controllers
 
 
             if (!ModelState.IsValid)
-                return View(viewName: nameof(Index), contactMessage);
+                return View(nameof(Index), contactMessage);
 
             var message = new ContactMessage
             {

@@ -52,6 +52,12 @@ namespace EduHomeFinalProject.Controllers
 
             return PartialView("_CourseSearchPartial", courses);
         }
+
+        public async Task<IActionResult> BlogSidebarCourse(int? id)
+        {
+            var categories = await _dbContext.Categories.Where(c => c.Id == id).Include(c => c.Courses).ToListAsync();
+            return View(categories);
+        }
     }
 }
     

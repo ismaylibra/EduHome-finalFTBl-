@@ -55,7 +55,9 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 ImageUrl = unicalFileName,
                 Title = model.Title,
                 Subtitle = model.Subtitle,
-                ButtonContent = model.ButtonContent
+                ButtonContent = model.ButtonContent,
+                ButtonLink = model.ButtonLink
+               
             };
 
             await _dbContext.SliderImages.AddAsync(slider);
