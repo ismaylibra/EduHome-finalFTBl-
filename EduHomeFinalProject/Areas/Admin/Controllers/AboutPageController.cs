@@ -143,7 +143,7 @@ namespace EduHomeFinalProject.Areas.Admin.Controllers
                 var unicalFileName = await model.Image.GenerateFile(Constants.AboutPath);
                 about.ImageUrl = unicalFileName;
             }
-           about.Title = model.Title;
+            about.Title = model.Title;
             about.Description = model.Description;
             about.ButtonContent = model.ButtonContent;
             about.ButtonUrl = model.ButtonUrl;

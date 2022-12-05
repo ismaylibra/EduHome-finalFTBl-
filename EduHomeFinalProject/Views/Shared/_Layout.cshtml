@@ -53,14 +53,8 @@
                                                 </li>
                                         }
                                         <li>
-                                            <a href="index.html">Home</a>
-                                            <ul>
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-2.html">Home Two</a></li>
-                                                <li><a href="index-3.html">Home Three</a></li>
-                                                <li><a href="index-4.html">Home Four</a></li>
-                                                <li><a href="index-5.html">Home Five</a></li>
-                                            </ul>
+                                            <a asp-controller="home" asp-action="index">Home</a>
+                                            
                                         </li>
                                         <li><a asp-controller="aboutPage" asp-action="index">About</a></li>
                                         <li>
@@ -73,10 +67,8 @@
                                         <li>
                                             <a asp-controller="event" asp-action="index">event</a>
                                             <ul>
-                                                <li><a asp-controller="event" asp-action="index"></a></li>
-                                                <li><a href="event-left-side-bar.html">event left sidebar</a></li>
-                                                <li><a href="event-right-side-bar.html">event right sidebar</a></li>
-                                                <li><a href="event-details.html">event details</a></li>
+                                                <li><a asp-controller="event" asp-action="index">event</a></li>
+                                                
                                             </ul>
                                         </li>
                                         <li class="hidden-sm">
@@ -89,8 +81,7 @@
                                             <a asp-controller="blog" asp-action="index">blog</a>
                                             <ul>
                                                 <li><a asp-controller="blog" asp-action="index">blog</a></li>
-                                                <li><a href="blog-left-side-bar.html">blog left sidebar</a></li>
-                                                <li><a href="blog-right-side-bar.html">blog righ sidebar</a></li>
+                                                
                                             </ul>
                                         </li>
                                         <li><a asp-controller="contact" asp-action="index">Contact</a></li>
