@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gY3sS4Wq9tJLW+3JV1pwYkhrmrdrCou57qsAgDT7I+U=",
+  "Hash": "Yd6iD8FnP7wUgI8PNjBOLHbHP8bQeSKslVMPEeOg5No=",
   "Source": "EduHomeFinalProject",
   "BasePath": "_content/EduHomeFinalProject",
   "Mode": "Default",
@@ -4163,6 +4163,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\5e7a80b9-e912-4f6f-b41f-c82d19ca8b0b-slider3.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\slider\\a58426b7-ec97-46ec-a67f-fe6cb6a4dcb3-home.png",
+      "SourceId": "EduHomeFinalProject",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\",
+      "BasePath": "_content/EduHomeFinalProject",
+      "RelativePath": "assets/img/slider/a58426b7-ec97-46ec-a67f-fe6cb6a4dcb3-home.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\img\\slider\\a58426b7-ec97-46ec-a67f-fe6cb6a4dcb3-home.png"
     },
     {
       "Identity": "C:\\Users\\ASUS\\Desktop\\ASP.NET\\EduHomeFinalProject\\EduHomeFinalProject\\wwwroot\\assets\\img\\slider\\f443ffe1-380e-4c71-88ef-3969c24a939a-slider1.jpg",
